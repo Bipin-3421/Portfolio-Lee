@@ -35,7 +35,7 @@ const Header = () => {
         </ul>
       </nav>
       {/* Mobile Menu */}
-      <nav className="md:hidden  z-10 ">
+      <nav className="md:hidden z-10">
         {mobileMenu ? (
           <AiOutlineClose
             onClick={() => setMobileMenu(false)}
