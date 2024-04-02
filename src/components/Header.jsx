@@ -4,8 +4,8 @@ import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
-const Header = () => {
-  const [mobileMenu, setMobileMenu] = useState(false);
+import { ReactTyped } from "react-typed";
+const Header = ({ mobileMenu, setMobileMenu }) => {
   const navigate = useNavigate();
   return (
     <header className="w-full h-[100px] bg-[#000042] flex justify-between items-center ">
@@ -51,11 +51,11 @@ const Header = () => {
       <div
         className={
           mobileMenu
-            ? "absolute top-0 left-0 bg-inherit w-full h-full flex justify-center flex-col items-center"
+            ? "absolute  top-0 left-0 bg-inherit w-full h-full flex justify-center flex-col items-center "
             : "hidden"
         }
       >
-        <ul className="text-[20px]">
+        <ul className="text-[20px] ">
           <li className="py-8 ">
             <Link to="/">Home</Link>
           </li>
