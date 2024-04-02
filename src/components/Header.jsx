@@ -51,7 +51,7 @@ const Header = ({ mobileMenu, setMobileMenu }) => {
       <div
         className={
           mobileMenu
-            ? "absolute  top-0 left-0 bg-inherit w-full h-full flex justify-center flex-col items-center "
+            ? "absolute  top-0 left-0 bg-inherit w-full h-screen flex justify-center flex-col items-center "
             : "hidden"
         }
       >

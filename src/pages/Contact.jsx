@@ -28,7 +28,7 @@ const Contact = () => {
       ref={form}
       onSubmit={sendEmail}
     >
-      <div className="md:w-[1000px] max-w-[300px] h-full mx-auto flex flex-col items-center justify-center gap-2 bg-emerald-600 text-[#ffffff] text-[22px]  ">
+      <div className="md:max-w-[1000px] max-w-[300px] h-full mx-auto flex flex-col items-center justify-center gap-2 bg-emerald-600 text-[#ffffff] text-[22px]  ">
         <div>
           <label className="mb-2 block text-center md:text-3xl">Name</label>
           <input
