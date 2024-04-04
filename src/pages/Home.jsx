@@ -3,7 +3,7 @@ import { ReactTyped } from "react-typed";
 
 const Home = ({ mobileMenu }) => {
   return (
-    <main className="w-full h-custom  bg-[#0f1056]">
+    <main className="w-full h-screen  bg-[#0f1056]">
       <section className="max-w-[1000px] px-8 mx-auto h-full flex flex-col justify-center">
         <p className="text-pink-700 text-2xl md:text-2xl">hi, my name is</p>
         <h1 className="text-[27px] md:text-7xl text-[#ccd6f6] font-bold">

@@ -24,7 +24,7 @@ const Contact = () => {
 
   return (
     <form
-      className="bg-[#aebfcd] w-full h-custom "
+      className="bg-[#aebfcd] w-full h-screen "
       ref={form}
       onSubmit={sendEmail}
     >

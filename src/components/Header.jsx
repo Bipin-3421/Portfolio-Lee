@@ -8,7 +8,7 @@ import { ReactTyped } from "react-typed";
 const Header = ({ mobileMenu, setMobileMenu }) => {
   const navigate = useNavigate();
   return (
-    <header className="w-full h-[100px] bg-[#000042] flex justify-between items-center ">
+    <header className=" fixed  w-full h-[100px] bg-[#000042] flex justify-between items-center ">
       <img
         src={Logo}
         alt="Logo"
