@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Home = ({ mobileMenu }) => {
   const navigate = useNavigate();
   return (
-    <main className="w-full h-screen  bg-[#0f1056] overflow-hidden">
+    <main className="w-full h-screen  bg-[#0f1056] ">
       <section className="max-w-[1000px] mb-8 px-8 mx-auto h-full flex flex-col justify-center  ">
         <p className="text-pink-700  md:text-2xl">hi, my name is</p>
         <h1 className="text-4xl md:text-2xl text-[#ccd6f6] font-bold">
@@ -14,7 +14,12 @@ const Home = ({ mobileMenu }) => {
         <h2 className="text-3xl mb-[80px] font-bold md:text-5xl max-w-[1000px] h-[20px] text-[#ccd6f6] ">
           I'm a{" "}
           <ReactTyped
-            strings={["Full Stack Software Developer", "React Developer"]}
+            strings={[
+              "Full Stack Software Developer",
+              "Software Engineer",
+              "React Developer",
+              "Lead Guitar Player",
+            ]}
             typeSpeed={20}
             loop
             backSpeed={20}

@@ -24,35 +24,39 @@ const Contact = () => {
 
   return (
     <form
-      className=" bg-[#0f1056] w-full h-screen overflow-hidden "
+      className=" bg-[#0f1056] w-full h-screen"
       ref={form}
       onSubmit={sendEmail}
     >
       <div className=" md:max-w-[1000px] max-w-[300px] h-full mx-auto flex flex-col items-center justify-center gap-2 text-[#ffffff] text-[22px]  ">
         <div>
-          <label className="mb-2 block text-center md:text-3xl">Name</label>
+          <label className="mt-8 mb-4 block text-center md:text-2xl">
+            Name
+          </label>
           <input
-            className="w-[250px] md:w-[700px] outline-none text-black bg-[#ccd6f6] text-center"
+            className="p-2  w-[250px] md:w-[700px] outline-none text-black bg-[#ccd6f6] text-center rounded"
             required
             type="text"
             name="user_name"
-            placeholder="Name"
+            placeholder="Please Enter Your Name"
           />
         </div>
         <div>
-          <label className="mb-2 block  text-center md:text-3xl">Email</label>
+          <label className="mb-2 block  text-center md:text-2xl">Email</label>
           <input
-            className="w-[250px] md:w-[700px] outline-none  text-black bg-[#ccd6f6] text-center"
+            className="w-[250px] p-2 md:w-[700px] outline-none  text-black bg-[#ccd6f6] text-center rounded"
             required
             type="email"
             name="user_email"
-            placeholder="Email"
+            placeholder="Please Enter Your Email"
           />
         </div>
         <div>
-          <label className="mb-2 block  text-center md:text-3xl">Message</label>
+          <label className="mb-4 block  text-center md:text-2xl ">
+            Message
+          </label>
           <textarea
-            className="md:w-[700px] w-[250px] outline-none text-black bg-[#ccd6f6]"
+            className="md:w-[700px] p-2 w-[250px] outline-none text-black bg-[#ccd6f6] rounded"
             rows={5}
             required
             name="message"
@@ -61,7 +65,7 @@ const Contact = () => {
 
         <div>
           <button
-            className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center"
+            className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-6 py-2 my-6 mx-auto flex items-center rounded-md"
             type="submit"
             value="Send"
           >

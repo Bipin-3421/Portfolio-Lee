@@ -3,16 +3,20 @@ import { data } from "../data/data.js";
 
 const Work = () => {
   return (
-    <div className="w-full h-screen  bg-[#0f1056] text-slate-300">
-      <section className="max-w-[1000px] w-full h-full p-4 flex flex-col   ">
+    <div className="w-full sm:h-screen  bg-[#0f1056] text-slate-300">
+      <section className="max-w-[1000px] w-full h-full p-4 flex flex-col mx-auto  justify-center">
         <div className="mt-[5rem]">
-          <p className="text-4xl font-bold inline-block border-b-4 border-pink-600 mb-4 ">
-            Projects
+          <div className="sm:text-center  ">
+            <p className="text-2xl sm:text-4xl font-bold inline-block border-b-4 border-pink-600 sm:mb-4 mb-2 ">
+              Projects
+            </p>
+          </div>
+          <p className="font-bold sm:text-xl sm:mb-[2rem] mb-4">
+            Check out some of my recent works:
           </p>
-          <p>Check out some of my recent works</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
           {data.map((project) => (
             <div
               key={project.id}
