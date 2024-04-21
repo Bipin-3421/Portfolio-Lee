@@ -24,33 +24,35 @@ const Contact = () => {
 
   return (
     <form
-      className="bg-[#aebfcd] w-full h-screen "
+      className=" bg-[#0f1056] w-full h-screen overflow-hidden "
       ref={form}
       onSubmit={sendEmail}
     >
-      <div className="md:max-w-[1000px] max-w-[300px] h-full mx-auto flex flex-col items-center justify-center gap-2 bg-emerald-600 text-[#ffffff] text-[22px]  ">
+      <div className=" md:max-w-[1000px] max-w-[300px] h-full mx-auto flex flex-col items-center justify-center gap-2 text-[#ffffff] text-[22px]  ">
         <div>
           <label className="mb-2 block text-center md:text-3xl">Name</label>
           <input
-            className="w-[250px] md:w-[700px] outline-none text-black"
+            className="w-[250px] md:w-[700px] outline-none text-black bg-[#ccd6f6] text-center"
             required
             type="text"
             name="user_name"
+            placeholder="Name"
           />
         </div>
         <div>
           <label className="mb-2 block  text-center md:text-3xl">Email</label>
           <input
-            className="w-[250px] md:w-[700px] outline-none  text-black"
+            className="w-[250px] md:w-[700px] outline-none  text-black bg-[#ccd6f6] text-center"
             required
             type="email"
             name="user_email"
+            placeholder="Email"
           />
         </div>
         <div>
           <label className="mb-2 block  text-center md:text-3xl">Message</label>
           <textarea
-            className="md:w-[700px] w-[250px] outline-none text-black"
+            className="md:w-[700px] w-[250px] outline-none text-black bg-[#ccd6f6]"
             rows={5}
             required
             name="message"
@@ -59,7 +61,7 @@ const Contact = () => {
 
         <div>
           <button
-            className=" mt-4 md:px-12 md:py-3  px-8 py-2 border-2 bg-[salmon] hover:bg-pink-700 hover:text-slate-100 text-slate-900"
+            className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center"
             type="submit"
             value="Send"
           >

@@ -8,28 +8,28 @@ import { ReactTyped } from "react-typed";
 const Header = ({ mobileMenu, setMobileMenu }) => {
   const navigate = useNavigate();
   return (
-    <header className=" fixed  w-full h-[100px] bg-[#000042] flex justify-between items-center ">
+    <header className="fixed w-full h-[70px] bg-[#000042] flex justify-between items-center ">
       <img
         src={Logo}
         alt="Logo"
-        style={{ width: "200px" }}
+        className="w-[150px]"
         onClick={() => navigate("/")}
       />
       <nav>
-        <ul className="hidden md:flex md:text-2xl  cursor-pointer">
-          <li className="mr-5">
+        <ul className="hidden md:flex md:text-[1.5rem]  cursor-pointer">
+          <li className="mr-8">
             <Link to="/">Home</Link>
           </li>
-          <li className="mr-5">
+          <li className="mr-8">
             <Link to="/about">About</Link>
           </li>
-          <li className="mr-5">
+          <li className="mr-8">
             <Link to="/skills">Skills</Link>
           </li>
-          <li className="mr-5">
+          <li className="mr-8">
             <Link to="/work">Work</Link>
           </li>
-          <li className="mr-5">
+          <li className="mr-8">
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
@@ -39,19 +39,19 @@ const Header = ({ mobileMenu, setMobileMenu }) => {
         {mobileMenu ? (
           <AiOutlineClose
             onClick={() => setMobileMenu(false)}
-            className="mr-2 text-slate-100 text-2xl "
+            className="mr-4  text-slate-100 text-2xl "
           />
         ) : (
           <AiOutlineMenu
             onClick={() => setMobileMenu(true)}
-            className="mr-2 text-slate-100 text-2xl "
+            className="mr-4  text-slate-100 text-2xl  "
           />
         )}
       </nav>
       <div
         className={
           mobileMenu
-            ? "absolute  top-0 left-0 bg-inherit w-full h-screen flex justify-center flex-col items-center "
+            ? "absolute  top-0 right-0 bg-inherit w-[50%] h-screen flex justify-center flex-col items-center "
             : "hidden"
         }
       >
